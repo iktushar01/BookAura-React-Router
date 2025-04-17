@@ -10,7 +10,7 @@ const ErrorPage = () => {
             style={{ backgroundImage: "url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif')" }}>
             {/* 404 text over the background */}
           </div>
-          <h1 className="text-9xl font-bold animate-pulse text-blue-100 text-center mb-8">404</h1>
+          <h1 className="text-9xl font-bold animate-pulse text-blue-200 text-center mb-8">404</h1>
 
           <div className="contant_box_404">
             <h3 className="text-4xl font-semibold text-gray-600">Looks like you're lost</h3>
