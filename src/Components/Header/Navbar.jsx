@@ -6,7 +6,7 @@ const Navbar = () => {
         <li><a href="#">about</a></li>
     </>
   return (
-    <div className="container mx-auto">
+    <div>
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -34,7 +34,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="font-bold text-xl">Book<span className="text-yellow-600">Aura</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
