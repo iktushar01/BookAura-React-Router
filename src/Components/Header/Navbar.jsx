@@ -1,19 +1,23 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = (
     <>
-      <li className="text-xl font-semibold">
-        <a href="#">Home</a>
-      </li>
-      <li className="text-xl font-semibold">
-        <a href="#">Listed Books</a>
-      </li>
-      <li className="text-xl font-semibold">
-        <a href="#">Pages to Read</a>
-      </li>
+      <Link to='/'><li className="text-xl font-semibold">
+        <a>Home</a>
+      </li></Link>
+      <Link to='/about'><li className="text-xl font-semibold">
+        <a>About</a>
+      </li></Link>
+      <Link to='/'><li className="text-xl font-semibold">
+        <a>Listed Books</a>
+      </li></Link>
+      <Link to='/'><li className="text-xl font-semibold">
+        <a>Pages to Read</a>
+      </li></Link>
       <li className="lg:hidden">
         <button className="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition text-sm w-full text-left">
           Sign Up

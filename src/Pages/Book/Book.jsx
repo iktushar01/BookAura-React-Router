@@ -1,10 +1,12 @@
 import React from "react";
 import { FaRegStar } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const Book = ({ singlebook }) => {
   const { bookName, author, category, bookId, image, tags } = singlebook;
 
   return (
+   <Link to={`/bookDetails/${bookId}`}>
     <div>
       <div className="bg-base-100 border-2">
         <figure>
@@ -63,6 +65,7 @@ const Book = ({ singlebook }) => {
         </div>
       </div>
     </div>
+   </Link>
   );
 };
 
