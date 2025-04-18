@@ -6,24 +6,25 @@ const Navbar = () => {
 
   const links = (
     <>
-      <Link to='/'><li className="text-xl font-semibold">
-        <a>Home</a>
-      </li></Link>
-      <Link to='/about'><li className="text-xl font-semibold">
-        <a>About</a>
-      </li></Link>
-      <Link to='/'><li className="text-xl font-semibold">
-        <a>Listed Books</a>
-      </li></Link>
-      <Link to='/'><li className="text-xl font-semibold">
-        <a>Pages to Read</a>
-      </li></Link>
-      <li className="lg:hidden">
-        <button className="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition text-sm w-full text-left">
-          Sign Up
-        </button>
-      </li>
-    </>
+  <li className="text-xl font-semibold">
+    <Link to="/">Home</Link>
+  </li>
+  <li className="text-xl font-semibold">
+    <Link to="/about">About</Link>
+  </li>
+  <li className="text-xl font-semibold">
+    <Link to="/readList">Listed Books</Link>
+  </li>
+  <li className="text-xl font-semibold">
+    <Link to="/">Pages to Read</Link>
+  </li>
+  <li className="lg:hidden">
+    <button className="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition text-sm w-full text-left">
+      Sign Up
+    </button>
+  </li>
+</>
+
   );
 
   return (
