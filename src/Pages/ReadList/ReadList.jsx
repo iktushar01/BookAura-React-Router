@@ -18,8 +18,8 @@ const ReadList = () => {
         <div className="tabs tabs-lifted">
           <input type="radio" name="unique_tabs_group" className="tab" aria-label="Read Books" defaultChecked />
           <div className="tab-content bg-base-100 border border-gray-300 rounded-box p-4">
-           <h1>Book I read : {readList.length}</h1>
-           <div>
+          <h1 className='text-2xl font-bold text-center pb-4'>You’ve read {readList.length} {readList.length === 1 ? 'book' : 'books'}</h1>
+          <div>
             {
                 readList.map(b => <BookTwo key={b.bookId} b = {b}></BookTwo>)
             }

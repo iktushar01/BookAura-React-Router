@@ -1,3 +1,5 @@
+import { toast } from "react-hot-toast";
+
 const getStoredBook = () => {
     const storeBookSTR = localStorage.getItem("readList");
     if (storeBookSTR) {
@@ -10,11 +12,12 @@ const getStoredBook = () => {
 const addToStoredDB = (id) => {
     const storedBookData = getStoredBook();
     if (storedBookData.includes(id)) {
-        alert("Bhai, ei ID agei ase!");
+        toast.error("Already added to read list");
     } else {
         storedBookData.push(id);
         const data = JSON.stringify(storedBookData);
-        localStorage.setItem("readList", data)
+        localStorage.setItem("readList", data);
+        toast.success("Book added to read list");
     }
 };
 
