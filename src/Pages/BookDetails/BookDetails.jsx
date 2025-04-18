@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
-import { addToStoredDB } from "../../Utilities/addToUtilities";
+import { addToStoredDB, showUpdateSoonToast } from "../../Utilities/addToUtilities";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -60,7 +60,7 @@ const BookDetails = () => {
         <div className="flex justify-between">
         <div className="pt-6 flex flex-col sm:flex-row gap-4">
           <button onClick={() => handleMarkAsRead(id)} className="btn btn-primary bg-amber-400 text-gray-800 w-full sm:w-auto">Mark As Read</button>
-          <button className="btn btn-outline w-full sm:w-auto">Add To Wishlist</button>
+          <button onClick={showUpdateSoonToast} className="btn btn-outline w-full sm:w-auto">Add To Wishlist</button>
         </div>
         <div className="animate-pulse">
         <a href="/" className="text-white bg-green-500 hover:bg-green-600 mt-6 py-2 px-4 rounded inline-block">

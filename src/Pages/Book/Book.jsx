@@ -1,5 +1,4 @@
 import React from "react";
-import { FaRegStar } from "react-icons/fa6";
 import { Link } from "react-router";
 
 const Book = ({ singlebook }) => {

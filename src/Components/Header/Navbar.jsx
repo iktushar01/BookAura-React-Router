@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
+import { showUpdateSoonToast } from "../../Utilities/addToUtilities";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,10 +17,10 @@ const Navbar = () => {
     <Link to="/readList">Listed Books</Link>
   </li>
   <li className="text-xl font-semibold">
-    <Link to="/nodata">Pages to Read</Link>
+    <Link onClick={showUpdateSoonToast} to="/nodata">Pages to Read</Link>
   </li>
   <li className="lg:hidden">
-    <button className="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition text-sm w-full text-left">
+    <button onClick={showUpdateSoonToast} className="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition text-sm w-full text-left">
       Sign Up
     </button>
   </li>
@@ -84,10 +85,10 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end flex gap-2">
-          <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 text-sm transition">
+          <button onClick={showUpdateSoonToast} className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 text-sm transition">
             Sign In
           </button>
-          <button className="bg-gray-400 text-sm text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition hidden lg:inline-block">
+          <button onClick={showUpdateSoonToast} className="bg-gray-400 text-sm text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition hidden lg:inline-block">
             Sign Up
           </button>
         </div>

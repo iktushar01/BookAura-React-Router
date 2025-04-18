@@ -23,3 +23,7 @@ const addToStoredDB = (id) => {
 
 
 export {addToStoredDB ,getStoredBook}
+
+export const showUpdateSoonToast = () => {
+    toast("This feature will update soon!");
+  };
