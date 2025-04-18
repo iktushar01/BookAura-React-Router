@@ -8,6 +8,7 @@ import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import BookDetails from '../Pages/BookDetails/BookDetails';
 import ReadList from '../Pages/ReadList/ReadList';
+import NoData from '../Pages/NoData/NoData';
   
 export const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
           path:'/readList',
           loader:() => fetch ('/public/data/booksData.json'),
           Component: ReadList
+        },
+        {
+          path:'/nodata',
+          Component: NoData
         },
         {
           path:"/bookDetails/:id",

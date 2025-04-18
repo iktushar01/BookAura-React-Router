@@ -16,7 +16,7 @@ const Navbar = () => {
     <Link to="/readList">Listed Books</Link>
   </li>
   <li className="text-xl font-semibold">
-    <Link to="/">Pages to Read</Link>
+    <Link to="/nodata">Pages to Read</Link>
   </li>
   <li className="lg:hidden">
     <button className="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition text-sm w-full text-left">
